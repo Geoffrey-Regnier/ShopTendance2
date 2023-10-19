@@ -1,0 +1,95 @@
+/** Style pour App */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  color: #333;
+
+}
+
+.header {
+  text-align: center;
+  background-color: #E9B824;
+  width: 100%;
+  border-bottom: #333 solid 3px;;
+}
+
+h1 {
+  font-size: 10vh;
+}
+
+
+/* Style pour Boutique */
+
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 45px;
+  margin: 2vh;
+}
+
+img {
+  width: 200px;
+}
+
+.photoProduit {
+  border: 1px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+
+.etiquette {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border: #333 solid 3px;
+  border-radius: 45px;
+  padding: 2vh;
+  margin: 5vh;
+  align-items: center;
+  background-color: #EE9322;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.btn {
+  font-size: 2vh;
+  margin: 0;
+}
+
+/* Style pour Formulaire */
+
+.formulaire {
+
+  width: 20vh;
+  position: sticky;
+  border: #333 solid 3px;
+  border-radius: 45px;
+  top: 10px;
+  margin-right: 4vh;
+  margin-top: 4vh;
+  padding: 2vh;
+  background-color: #EE9322;;
+}
+
+h2 {
+  text-align: center;
+font-size: 4vh;
+}
+
+  .description {
+    height: 8vh;
+  }
