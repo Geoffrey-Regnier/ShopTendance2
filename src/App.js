@@ -1,5 +1,6 @@
-import Boutique from './Components/Boutique';
+import Hommes from './Components/Boutique';
 import Formulaire from './Components/Formulaire';
+import Navbar from './Components/Navbar';
 import './Styles/App.css';
 import React from 'react';
 
@@ -10,9 +11,10 @@ const App = () => {
     <div className="App">
       <div className='header'>
         <h1>Shop Tendance</h1>
+        <Navbar />
       </div>
       <div className='container'>
-        <Boutique />
+        <Hommes />
         <Formulaire />
       </div>
     </div>

@@ -3,6 +3,7 @@ import axios from 'axios';
 export const GET_PRODUCTS = 'GET_PRODUCTS';
 export const ADD_PRODUCTS = 'ADD_PRODUCTS';
 export const DELETE_PRODUCTS = 'DELETE_PRODUCTS';
+export const FILTER_MEN = 'FILTER_MEN';
 
 export const getProducts = () => {
     return (dispatch) => {

@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 4vh;
+    padding: 0;
+    margin: 0;
+    border-top: 3px solid #333;
+
+}
+
+.navbarOnglet {
+    cursor: pointer;
+    width: 100%;
+}
+
+.boite {
+    border-left: 3px solid #333;
+}
