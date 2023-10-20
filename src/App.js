@@ -66,7 +66,7 @@ const router = createBrowserRouter([
       <Header />
     </div>
     <div className='container'>
-      <p>Nique tes grands morts !</p>
+      <Boutique category = "Enfants"/>
       <Formulaire />
     </div>
   </div>
@@ -79,7 +79,7 @@ const router = createBrowserRouter([
       <Header />
     </div>
     <div className='container'>
-      <p>Nique tes grands morts !</p>
+      <Boutique category = "Bébés"/>
       <Formulaire />
     </div>
   </div>
