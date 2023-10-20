@@ -12,6 +12,12 @@
 .navbarOnglet {
     cursor: pointer;
     width: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbarOnglet:hover {
+    box-shadow: black 0 0 10px;
 }
 
 .boite {

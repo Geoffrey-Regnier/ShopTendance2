@@ -3,12 +3,25 @@ import { useSelector } from 'react-redux';
 import { isEmpty } from './Utils';
 import { deleteProducts } from '../Actions/products.action';
 import { useDispatch } from 'react-redux';
+/*  import { useState } from 'react'; */
 
 
 
-const Boutique = ({product}) => {
+const Boutique = (props) => {
 	const products = useSelector((state) => state.productReducer);
 	const dispatch = useDispatch();
+	/** const [selectedCategory, setSelectedCategory] = useState(''); */
+
+	/** setSelectedCategory(props.category); */
+
+	  const filteredProducts = products.filter((product) => {
+		if (props.category === '') {
+		  return true;
+		} else {
+		  return product.categories.includes(props.category);
+		}
+	  });
+
 
 
 	return (
@@ -16,7 +29,7 @@ const Boutique = ({product}) => {
 			{isEmpty(products) ? (
 				<p>No products available.</p>
 			) : (
-				products.map((product) => (
+				filteredProducts.map((product) => (
 					<div className='etiquette' key={product.id}>
 						<div className='photoProduit'>
 							<img src={product.imageUrl} alt={product.title} />
