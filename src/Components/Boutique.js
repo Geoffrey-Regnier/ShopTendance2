@@ -3,16 +3,12 @@ import { useSelector } from 'react-redux';
 import { isEmpty } from './Utils';
 import { deleteProducts } from '../Actions/products.action';
 import { useDispatch } from 'react-redux';
-/*  import { useState } from 'react'; */
 
 
 
 const Boutique = (props) => {
 	const products = useSelector((state) => state.productReducer);
 	const dispatch = useDispatch();
-	/** const [selectedCategory, setSelectedCategory] = useState(''); */
-
-	/** setSelectedCategory(props.category); */
 
 	  const filteredProducts = products.filter((product) => {
 		if (props.category === '') {
